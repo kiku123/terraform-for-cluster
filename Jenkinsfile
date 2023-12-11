@@ -1,4 +1,3 @@
-[15:19] Snewhadeep Saha
 #!/usr/bin/env groovy
 
 pipeline {
