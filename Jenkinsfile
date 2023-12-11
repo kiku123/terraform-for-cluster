@@ -10,7 +10,7 @@ pipeline {
 
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
 
-        AWS_DEFAULT_REGION = "us-east-2"
+        AWS_DEFAULT_REGION = "us-west-1"
 
     }
 
@@ -44,7 +44,7 @@ pipeline {
 
                     dir('kubernetes') {
 
-                        sh "aws eks update-kubeconfig --name myjenkins-server-eks-cluster"
+                        sh "aws eks update-kubeconfig --name myjenkins-server-eks-cluster-new"
 
                         sh "kubectl apply -f deployment.yaml"
 
